@@ -40,8 +40,8 @@
 }
 
 .fish {
-	width:290px;
-	height:205px;
+	width:100px;
+	height:71px;
 	background-image:url(fish01.png);
 	display:block;
 	text-align:center;
@@ -63,7 +63,7 @@
 .answer {
 	font-size:42px;
 	vertical-align:middle;
-	line-height:205px;
+	line-height:71px;
 	position:absolute;
 }
 
