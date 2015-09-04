@@ -1,0 +1,86 @@
+.sea {
+	background: #1e5799;
+	background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8));
+	background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+	background: -o-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+	background: -ms-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+	background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 );
+
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	top:40px;
+	padding:10px;
+
+}
+
+.question {
+	border-radius: 10px;
+	background-color: rgba(255,255,255,0.3);
+	font-size:36px;
+	padding:10px;
+	text-align:center;
+	border-style:solid;
+	border-color:#000;
+}
+
+.correct {
+	background-color: #0F0;
+}
+
+.incorrect {
+	background-color:#F00;
+}
+
+.invisible {
+	opacity:0;
+}
+
+.fish {
+	width:290px;
+	height:205px;
+	background-image:url(fish01.png);
+	display:block;
+	text-align:center;
+	transition: 5.0s;
+	position:absolute;
+	left:800px;
+}
+
+.flipH {
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+}
+
+
+.answer {
+	font-size:42px;
+	vertical-align:middle;
+	line-height:205px;
+	position:absolute;
+}
+
+/*.fish:hover {
+	border-radius:10px;
+	background-color:rgba(255,255,255,0.8);
+}*/
+
+#score {
+	position:absolute;
+	right:20px;
+	top:20px;
+	border-radius:10px;
+	width:50px;
+	background-color:#FFF;
+	text-align:center;
+	padding:20px;
+	font-size:large;
+	z-index:1000;
+}
