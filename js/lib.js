@@ -1,5 +1,8 @@
 var F = {
 	init: function() {
+		for(i = 0; i <= 12; i++) {
+			F.stats[i] = 0;
+		}
 		F.showQuestion();
 	},
 	
@@ -8,10 +11,11 @@ var F = {
 	},
 	
 	score:0,
+	stats:Array(12),
 	
 	showQuestion: function() {
-		var n1 = F.randBetween(1, 10);
-		var n2 = F.randBetween(1, 10);
+		var n1 = F.randBetween(1, 12);
+		var n2 = F.randBetween(1, 12);
 		var answer = n1 * n2;
 		var html = '<div class="question">What is ' + n1 + ' x ' + n2 + '?</div>\
             <span class="fish" id="fish1"><span class="answer">' + answer + '</span></span>\
@@ -32,10 +36,22 @@ var F = {
 						
 						setTimeout(F.showQuestion, 2000);
 						F.score += 1;
-						$('#score').text(F.score);
+						
+						
+						F.stats[n1]+=1;
+						F.stats[n2]+=1;
+						
 					} else {
 						$('.question').removeClass("correct").addClass("incorrect");
+						if(F.stats[n1] > 0)F.stats[n1]-=1;
+						if(F.stats[n2] > 0)F.stats[n2]-=1;
+											}
+					F.score = 0;
+					for(i = 0; i <= 12; i++) {
+						$('#tt_plant_indicator_' + (i)).css('height', 10+10*F.stats[i]);
+						F.score += F.stats[i];
 					}
+					$('#score').text("Score:" + F.score);
 				});
 				
 			}

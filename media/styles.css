@@ -77,10 +77,67 @@
 	right:20px;
 	top:20px;
 	border-radius:10px;
-	width:50px;
 	background-color:#FFF;
 	text-align:center;
 	padding:20px;
 	font-size:large;
 	z-index:1000;
+}
+
+.tt_plant_indicator {
+	position:absolute;
+	bottom:0px;
+	height:10px;
+	width:3%;
+	background-image:url(weed.png);
+	text-align:center;
+	transition: 1.0s;
+}
+
+#tt_plant_indicator_1 {
+	left:5%;
+}
+
+#tt_plant_indicator_2 {
+	left:10%;
+}
+
+#tt_plant_indicator_3 {
+	left:15%;
+}
+
+#tt_plant_indicator_4 {
+	left:20%;
+}
+
+#tt_plant_indicator_5 {
+	left:25%;
+}
+
+#tt_plant_indicator_6 {
+	left:30%;
+}
+
+#tt_plant_indicator_7 {
+	left:35%;
+}
+
+#tt_plant_indicator_8 {
+	left:40%;
+}	
+
+#tt_plant_indicator_9 {
+	left:45%;
+}
+
+#tt_plant_indicator_10 {
+	left:50%;
+}
+
+#tt_plant_indicator_11 {
+	left:55%;
+}
+
+#tt_plant_indicator_12 {
+	left:60%;
 }
